@@ -21,7 +21,8 @@ public class Program {
 		String strUrl = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios";
 		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 		Date date = new Date();
-		String filePath = "D:\\temp\\IBGE\\";
+		String filePath = "E:\\Temp\\Java\\";
+				//"D:\\temp\\IBGE\\";
 		String fileFullName = filePath + "IBGE_MUNICIPIOS_" + dateFormat.format(date) + ".csv";
 		// 2016/11/16 12:08:43
 
