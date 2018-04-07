@@ -4,8 +4,16 @@ public class Pizza {
 	private static HashMap<String, Integer> ingredientesPizzas;
 	private HashMap<String, Integer> ingredientes;
 	private String nome;
+	
+	public Pizza() {
+		this.inicializarVariaveis("");
+	}
 
 	public Pizza(String nome) {
+		this.inicializarVariaveis(nome);
+	}
+	
+	private void inicializarVariaveis(String nome) {
 		this.nome = nome;
 		// inicializa a variável dos ingredientes de todas as pizzas
 		if (ingredientesPizzas == null) {
